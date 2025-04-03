@@ -6,10 +6,10 @@ import chalk from "chalk";
 import fs from "fs-extra";
 import path from "path";
 
-const COMPONENTS_REPO = "https://github.com/mahmoud661/packtest.git";
+const COMPONENTS_REPO = "mahmoud661/packtest";  // Remove https://github.com/ prefix
 
 program
-  .version("1.0.0")
+  .version("1.0.3")
   .command("add <component>")
   .description("Add a component to your project")
   .action(async (component) => {
@@ -26,7 +26,7 @@ program
       // Create components directory if it doesn't exist
       fs.ensureDirSync(path.join(process.cwd(), "components"));
 
-      // Fetch the component from GitHub
+      // Fetch the component from GitHub using the correct degit format
       execSync(`npx degit ${COMPONENTS_REPO}/components/${component} ${targetPath}`, {
         stdio: "inherit",
       });
