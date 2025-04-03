@@ -6,7 +6,7 @@ import chalk from "chalk";
 import fs from "fs-extra";
 import path from "path";
 
-const COMPONENTS_REPO = "https://github.com/mahmoud661/packagetest";
+const COMPONENTS_REPO = "https://github.com/mahmoud661/packtest.git";
 
 program
   .version("1.0.0")
