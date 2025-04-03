@@ -1,0 +1,17 @@
+{
+  "name": "component-forge-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for downloading React components",
+  "type": "module",
+  "bin": {
+    "component-forge": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.1.1"
+  }
+}
